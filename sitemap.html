@@ -393,8 +393,13 @@
                 rows.forEach(row => {
                     const id = row.getAttribute('data-id');
                     const textVal = row.querySelector('.input-text').value.trim();
-                    const sizeVal = row.querySelector('.input-size').value.trim();
+                    let sizeVal = row.querySelector('.input-size').value.trim();
                     const colorVal = row.querySelector('.input-color').value.trim();
+
+                    // If user just typed "30" instead of "30px", auto-append "px"
+                    if (sizeVal && !isNaN(sizeVal)) {
+                        sizeVal += 'px';
+                    }
 
                     if (textVal || sizeVal || colorVal) {
                         updateData[id] = {};

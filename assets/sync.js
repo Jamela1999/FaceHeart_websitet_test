@@ -16,7 +16,11 @@ document.addEventListener("DOMContentLoaded", () => {
                 elements.forEach(element => {
                     if (data[id].text !== undefined) element.innerHTML = data[id].text;
                     if (data[id].color !== undefined) element.style.color = data[id].color;
-                    if (data[id].fontSize !== undefined) element.style.fontSize = data[id].fontSize;
+                    if (data[id].fontSize !== undefined) {
+                        let fSize = data[id].fontSize;
+                        if (fSize && !isNaN(fSize)) fSize += 'px';
+                        element.style.fontSize = fSize;
+                    }
                 });
             });
         }
