@@ -105,7 +105,7 @@ def get_section_name(element):
     return "Main Body"
 
 def process_html_pages(pages):
-    tags_to_check = ['h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'p', 'span', 'button', 'li']
+    tags_to_check = ['h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'p', 'span', 'button', 'li', 'a', 'label', 'strong', 'em', 'b', 'i']
     
     # New structured map
     # content_map = { "Page Name": { "Section Name": { "txt-0001": { "text": "Hello", "tag": "h1" } } } }
@@ -138,13 +138,14 @@ def process_html_pages(pages):
                 
             # If no actual non-whitespace text directly inside or in children, ignore
             if text.strip():
-                # Avoid nesting edits: if parents have ID, don't add to children
-                p_id = False
-                for p in tag.parents:
-                    if p.has_attr('data-content-id'):
-                        p_id = True
+                # Avoid assigning an ID to a parent if any child is also a valid tag with text
+                has_valid_child = False
+                for child in tag.find_all(tags_to_check):
+                    if child.get_text(separator=' ', strip=True):
+                        has_valid_child = True
                         break
-                if p_id: continue
+                if has_valid_child:
+                    continue
 
                 content_id = tag.get('data-content-id')
                 if not content_id:

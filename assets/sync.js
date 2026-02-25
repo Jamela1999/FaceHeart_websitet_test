@@ -14,7 +14,9 @@ document.addEventListener("DOMContentLoaded", () => {
             Object.keys(data).forEach(id => {
                 const element = document.querySelector(`[data-content-id="${id}"]`);
                 if (element) {
-                    element.innerHTML = data[id];
+                    if (data[id].text !== undefined) element.innerHTML = data[id].text;
+                    if (data[id].color !== undefined) element.style.color = data[id].color;
+                    if (data[id].fontSize !== undefined) element.style.fontSize = data[id].fontSize;
                 }
             });
         }
