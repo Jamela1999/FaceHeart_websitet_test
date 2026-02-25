@@ -2,6 +2,7 @@ import json
 import re
 import os
 import urllib.request
+import hashlib
 from bs4 import BeautifulSoup
 
 BASE_URL = "https://next-sass-html.vercel.app"
@@ -110,9 +111,12 @@ def process_html_pages(pages):
     # New structured map
     # content_map = { "Page Name": { "Section Name": { "txt-0001": { "text": "Hello", "tag": "h1" } } } }
     grouped_content_map = {}
-    flat_id_set = set() # Avoid global ID duplicates
+    seen_hashes = set() # Avoid logging global ID duplicates in JSON
     
-    counter = 1
+    # Process index.html first so shared nav/footer text is logged under Home Page
+    if 'index.html' in pages:
+        pages.remove('index.html')
+        pages.insert(0, 'index.html')
     
     for page in pages:
         local_path = os.path.join(DIR_PATH, page)
@@ -151,18 +155,18 @@ def process_html_pages(pages):
                 if has_valid_child:
                     continue
 
-                content_id = tag.get('data-content-id')
-                if not content_id:
-                    content_id = f"txt-{counter:04d}"
-                    tag['data-content-id'] = content_id
-                    counter += 1
-                elif content_id in flat_id_set:
-                    # Regenerate if duplicated across pages
-                    content_id = f"txt-{counter:04d}"
-                    tag['data-content-id'] = content_id
-                    counter += 1
+                # Deduplicate by hashing text and tag
+                norm_text = re.sub(r'\s+', ' ', text.strip())
+                unique_string = f"{tag.name}:{norm_text}"
+                content_id = "txt-" + hashlib.md5(unique_string.encode('utf-8')).hexdigest()[:8]
+                tag['data-content-id'] = content_id
+
+                # If we have already saved this exact text combination, skip saving it again to content.json
+                # (but it remains tagged in the HTML so sync.js will find it)
+                if content_id in seen_hashes:
+                    continue
                     
-                flat_id_set.add(content_id)
+                seen_hashes.add(content_id)
                 
                 section_name = get_section_name(tag)
                 
@@ -206,7 +210,7 @@ def process_html_pages(pages):
     with open(json_path, 'w', encoding='utf-8') as f:
         json.dump(grouped_content_map, f, indent=4)
         
-    print(f"Extraction complete! Formatted {counter - 1} text elements.")
+    print(f"Extraction complete! Formatted {len(seen_hashes)} unique text elements.")
 
 if __name__ == "__main__":
     local_pages = download_missing_pages()
