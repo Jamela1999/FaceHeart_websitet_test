@@ -1,0 +1,990 @@
+{
+    "txt-0001": {
+        "text": "Home",
+        "tag": "span"
+    },
+    "txt-0002": {
+        "text": "Company",
+        "tag": "span"
+    },
+    "txt-0003": {
+        "text": "About Us",
+        "tag": "p"
+    },
+    "txt-0004": {
+        "text": "Learn about our mission, values, and dedicated team",
+        "tag": "p"
+    },
+    "txt-0005": {
+        "text": "Our Services",
+        "tag": "p"
+    },
+    "txt-0006": {
+        "text": "Explore our comprehensive marketing solutions",
+        "tag": "p"
+    },
+    "txt-0007": {
+        "text": "Product Features",
+        "tag": "p"
+    },
+    "txt-0008": {
+        "text": "Discover powerful marketing tools and capabilities",
+        "tag": "p"
+    },
+    "txt-0009": {
+        "text": "Blog & News",
+        "tag": "p"
+    },
+    "txt-0010": {
+        "text": "Stay updated with latest articles and insights",
+        "tag": "p"
+    },
+    "txt-0011": {
+        "text": "What's New",
+        "tag": "p"
+    },
+    "txt-0012": {
+        "text": "Digital Marketing",
+        "tag": "p"
+    },
+    "txt-0013": {
+        "text": "Digital Marketing is a platform that helps you grow your business online.",
+        "tag": "p"
+    },
+    "txt-0014": {
+        "text": "Collaborate",
+        "tag": "span"
+    },
+    "txt-0015": {
+        "text": "Affiliate",
+        "tag": "p"
+    },
+    "txt-0016": {
+        "text": "Join affiliates",
+        "tag": "p"
+    },
+    "txt-0017": {
+        "text": "Referral",
+        "tag": "p"
+    },
+    "txt-0018": {
+        "text": "Invite friends",
+        "tag": "p"
+    },
+    "txt-0019": {
+        "text": "Login",
+        "tag": "p"
+    },
+    "txt-0020": {
+        "text": "Access workspace",
+        "tag": "p"
+    },
+    "txt-0021": {
+        "text": "Create Account",
+        "tag": "p"
+    },
+    "txt-0022": {
+        "text": "Get started now",
+        "tag": "p"
+    },
+    "txt-0023": {
+        "text": "Download",
+        "tag": "p"
+    },
+    "txt-0024": {
+        "text": "Download software",
+        "tag": "p"
+    },
+    "txt-0025": {
+        "text": "Integration",
+        "tag": "p"
+    },
+    "txt-0026": {
+        "text": "Integrate tools",
+        "tag": "p"
+    },
+    "txt-0027": {
+        "text": "Resources",
+        "tag": "span"
+    },
+    "txt-0028": {
+        "text": "Help & Documentation",
+        "tag": "p"
+    },
+    "txt-0029": {
+        "text": "Documentation",
+        "tag": "p"
+    },
+    "txt-0030": {
+        "text": "Detailed documentation of the product.",
+        "tag": "p"
+    },
+    "txt-0031": {
+        "text": "Tutorials",
+        "tag": "p"
+    },
+    "txt-0032": {
+        "text": "Step-by-step guides to help you get started.",
+        "tag": "p"
+    },
+    "txt-0033": {
+        "text": "FAQ",
+        "tag": "p"
+    },
+    "txt-0034": {
+        "text": "Frequently asked questions and answers.",
+        "tag": "p"
+    },
+    "txt-0035": {
+        "text": "Case Studies",
+        "tag": "p"
+    },
+    "txt-0036": {
+        "text": "Real-world examples of how the product is used.",
+        "tag": "p"
+    },
+    "txt-0037": {
+        "text": "Whitepapers",
+        "tag": "p"
+    },
+    "txt-0038": {
+        "text": "Detailed whitepapers on the product.",
+        "tag": "p"
+    },
+    "txt-0039": {
+        "text": "Support",
+        "tag": "p"
+    },
+    "txt-0040": {
+        "text": "Get help and support from our team.",
+        "tag": "p"
+    },
+    "txt-0041": {
+        "text": "Knowledge & Research",
+        "tag": "p"
+    },
+    "txt-0042": {
+        "text": "Use Cases",
+        "tag": "p"
+    },
+    "txt-0043": {
+        "text": "Explore real-world scenarios where our digital marketing delivers results.",
+        "tag": "p"
+    },
+    "txt-0044": {
+        "text": "Success Stories",
+        "tag": "p"
+    },
+    "txt-0045": {
+        "text": "Discover measurable outcomes achieved by clients.",
+        "tag": "p"
+    },
+    "txt-0046": {
+        "text": "Analytics",
+        "tag": "p"
+    },
+    "txt-0047": {
+        "text": "Dive into performance metrics and data insights.",
+        "tag": "p"
+    },
+    "txt-0048": {
+        "text": "Changelog",
+        "tag": "p"
+    },
+    "txt-0049": {
+        "text": "Stay updated with the latest changes and improvements.",
+        "tag": "p"
+    },
+    "txt-0050": {
+        "text": "Glossary",
+        "tag": "p"
+    },
+    "txt-0051": {
+        "text": "Terms and definitions.",
+        "tag": "p"
+    },
+    "txt-0052": {
+        "text": "Trust & Compliance",
+        "tag": "p"
+    },
+    "txt-0053": {
+        "text": "Security",
+        "tag": "p"
+    },
+    "txt-0054": {
+        "text": "GDPR Compliance",
+        "tag": "p"
+    },
+    "txt-0055": {
+        "text": "Privacy Policy",
+        "tag": "p"
+    },
+    "txt-0056": {
+        "text": "Terms & Conditions",
+        "tag": "p"
+    },
+    "txt-0057": {
+        "text": "Press Coverage",
+        "tag": "p"
+    },
+    "txt-0058": {
+        "text": "Affiliate Policy",
+        "tag": "p"
+    },
+    "txt-0059": {
+        "text": "Legal",
+        "tag": "p"
+    },
+    "txt-0060": {
+        "text": "People & Culture",
+        "tag": "span"
+    },
+    "txt-0061": {
+        "text": "Process",
+        "tag": "p"
+    },
+    "txt-0062": {
+        "text": "Discover our methodology",
+        "tag": "p"
+    },
+    "txt-0063": {
+        "text": "Team",
+        "tag": "p"
+    },
+    "txt-0064": {
+        "text": "Get to know our experts",
+        "tag": "p"
+    },
+    "txt-0065": {
+        "text": "Career",
+        "tag": "p"
+    },
+    "txt-0066": {
+        "text": "Find your next role",
+        "tag": "p"
+    },
+    "txt-0067": {
+        "text": "Testimonial",
+        "tag": "p"
+    },
+    "txt-0068": {
+        "text": "Read client reviews",
+        "tag": "p"
+    },
+    "txt-0069": {
+        "text": "Customer",
+        "tag": "p"
+    },
+    "txt-0070": {
+        "text": "Plan, track, and deliver",
+        "tag": "p"
+    },
+    "txt-0071": {
+        "text": "Contact",
+        "tag": "p"
+    },
+    "txt-0072": {
+        "text": "Send us a message",
+        "tag": "p"
+    },
+    "txt-0073": {
+        "text": "Pricing",
+        "tag": "span"
+    },
+    "txt-0074": {
+        "text": "Get started",
+        "tag": "span"
+    },
+    "txt-0075": {
+        "text": "Menu",
+        "tag": "span"
+    },
+    "txt-0076": {
+        "text": "Home",
+        "tag": "span"
+    },
+    "txt-0077": {
+        "text": "Close Menu",
+        "tag": "span"
+    },
+    "txt-0078": {
+        "text": "Menu",
+        "tag": "p"
+    },
+    "txt-0079": {
+        "text": "Company",
+        "tag": "span"
+    },
+    "txt-0080": {
+        "text": "About Us",
+        "tag": "a"
+    },
+    "txt-0081": {
+        "text": "Our Services",
+        "tag": "a"
+    },
+    "txt-0082": {
+        "text": "Product Features",
+        "tag": "a"
+    },
+    "txt-0083": {
+        "text": "Blog & News",
+        "tag": "a"
+    },
+    "txt-0084": {
+        "text": "Collaborate",
+        "tag": "span"
+    },
+    "txt-0085": {
+        "text": "Affiliate",
+        "tag": "a"
+    },
+    "txt-0086": {
+        "text": "Referral",
+        "tag": "a"
+    },
+    "txt-0087": {
+        "text": "Login",
+        "tag": "a"
+    },
+    "txt-0088": {
+        "text": "Create Account",
+        "tag": "a"
+    },
+    "txt-0089": {
+        "text": "Download",
+        "tag": "a"
+    },
+    "txt-0090": {
+        "text": "Integration",
+        "tag": "a"
+    },
+    "txt-0091": {
+        "text": "Resources",
+        "tag": "span"
+    },
+    "txt-0092": {
+        "text": "Documentation",
+        "tag": "a"
+    },
+    "txt-0093": {
+        "text": "Tutorials",
+        "tag": "a"
+    },
+    "txt-0094": {
+        "text": "FAQ",
+        "tag": "a"
+    },
+    "txt-0095": {
+        "text": "Case Studies",
+        "tag": "a"
+    },
+    "txt-0096": {
+        "text": "Whitepapers",
+        "tag": "a"
+    },
+    "txt-0097": {
+        "text": "Support",
+        "tag": "a"
+    },
+    "txt-0098": {
+        "text": "Use Cases",
+        "tag": "a"
+    },
+    "txt-0099": {
+        "text": "Success Stories",
+        "tag": "a"
+    },
+    "txt-0100": {
+        "text": "Analytics",
+        "tag": "a"
+    },
+    "txt-0101": {
+        "text": "Changelog",
+        "tag": "a"
+    },
+    "txt-0102": {
+        "text": "Glossary",
+        "tag": "a"
+    },
+    "txt-0103": {
+        "text": "Security",
+        "tag": "a"
+    },
+    "txt-0104": {
+        "text": "GDPR Compliance",
+        "tag": "a"
+    },
+    "txt-0105": {
+        "text": "Privacy Policy",
+        "tag": "a"
+    },
+    "txt-0106": {
+        "text": "Terms & Conditions",
+        "tag": "a"
+    },
+    "txt-0107": {
+        "text": "Refund Policy",
+        "tag": "a"
+    },
+    "txt-0108": {
+        "text": "Affiliate Policy",
+        "tag": "a"
+    },
+    "txt-0109": {
+        "text": "Legal",
+        "tag": "a"
+    },
+    "txt-0110": {
+        "text": "Press Coverage",
+        "tag": "a"
+    },
+    "txt-0111": {
+        "text": "People & Culture",
+        "tag": "span"
+    },
+    "txt-0112": {
+        "text": "Process",
+        "tag": "a"
+    },
+    "txt-0113": {
+        "text": "Team",
+        "tag": "a"
+    },
+    "txt-0114": {
+        "text": "Career",
+        "tag": "a"
+    },
+    "txt-0115": {
+        "text": "Testimonial",
+        "tag": "a"
+    },
+    "txt-0116": {
+        "text": "Customer",
+        "tag": "a"
+    },
+    "txt-0117": {
+        "text": "Contact",
+        "tag": "a"
+    },
+    "txt-0118": {
+        "text": "Pricing",
+        "tag": "a"
+    },
+    "txt-0119": {
+        "text": "Fuel your growth with data-driven digital marketing",
+        "tag": "h1"
+    },
+    "txt-0120": {
+        "text": "Over 15 years of transforming traffic into profit through SEO, SEM, and conversion-focused\n        campaigns.",
+        "tag": "p"
+    },
+    "txt-0121": {
+        "text": "Get free marketing audit",
+        "tag": "span"
+    },
+    "txt-0122": {
+        "text": "Explore our work",
+        "tag": "span"
+    },
+    "txt-0123": {
+        "text": "Trusted by over 300 clients.",
+        "tag": "p"
+    },
+    "txt-0124": {
+        "text": "Your brand\u2019s success will be our next case study.",
+        "tag": "p"
+    },
+    "txt-0125": {
+        "text": "Services overview",
+        "tag": "span"
+    },
+    "txt-0126": {
+        "text": "Our performance-focused services.",
+        "tag": "h2"
+    },
+    "txt-0127": {
+        "text": "Smart, secure, and designed for simplicity\u2014Nexsas empowers you to take control\n            effortlessly.",
+        "tag": "p"
+    },
+    "txt-0128": {
+        "text": "View full-service breakdown.",
+        "tag": "span"
+    },
+    "txt-0129": {
+        "text": "SEO",
+        "tag": "h3"
+    },
+    "txt-0130": {
+        "text": "Enhance visibility, authority, and important keyword rankings.",
+        "tag": "p"
+    },
+    "txt-0131": {
+        "text": "SEM",
+        "tag": "h3"
+    },
+    "txt-0132": {
+        "text": "Data-optimized campaigns designed to attract ready-to-buy audiences.",
+        "tag": "p"
+    },
+    "txt-0133": {
+        "text": "Email marketing & automation",
+        "tag": "h3"
+    },
+    "txt-0134": {
+        "text": "Nurture leads and convert subscribers with timely campaigns.",
+        "tag": "p"
+    },
+    "txt-0135": {
+        "text": "Link building & authority outreach .",
+        "tag": "h3"
+    },
+    "txt-0136": {
+        "text": "Secure high-quality backlinks that enhance your SEO",
+        "tag": "p"
+    },
+    "txt-0137": {
+        "text": "Local SEO & google business optimization",
+        "tag": "h3"
+    },
+    "txt-0138": {
+        "text": "Help local customers discover you\u2014first, fast, and frequently.",
+        "tag": "p"
+    },
+    "txt-0139": {
+        "text": "Analytics & conversion optimization",
+        "tag": "h3"
+    },
+    "txt-0140": {
+        "text": "Collect data to convert clicks into customers & optimize every dollar spent.",
+        "tag": "p"
+    },
+    "txt-0141": {
+        "text": "01",
+        "tag": "p"
+    },
+    "txt-0142": {
+        "text": "Deep audit & discovery.",
+        "tag": "h2"
+    },
+    "txt-0143": {
+        "text": "We assess your current digital footprint and uncover hidden opportunities.",
+        "tag": "p"
+    },
+    "txt-0144": {
+        "text": "02",
+        "tag": "p"
+    },
+    "txt-0145": {
+        "text": "Campaign planning & execution.",
+        "tag": "h2"
+    },
+    "txt-0146": {
+        "text": "Strategy-first campaigns tailored to your goals, industry, and audience.",
+        "tag": "p"
+    },
+    "txt-0147": {
+        "text": "03",
+        "tag": "p"
+    },
+    "txt-0148": {
+        "text": "Weekly optimization cycles.",
+        "tag": "h2"
+    },
+    "txt-0149": {
+        "text": "We test, iterate, and adjust for maximum performance every week.",
+        "tag": "p"
+    },
+    "txt-0150": {
+        "text": "Learn about our approach.",
+        "tag": "span"
+    },
+    "txt-0151": {
+        "text": "Why Nexsas?",
+        "tag": "h2"
+    },
+    "txt-0152": {
+        "text": "Manage your entire mobile infrastructure from one platform.",
+        "tag": "p"
+    },
+    "txt-0153": {
+        "text": "Explore all features",
+        "tag": "a"
+    },
+    "txt-0154": {
+        "text": "SaaS & tech",
+        "tag": "h3"
+    },
+    "txt-0155": {
+        "text": "Reduce customer acquisition costs, increase signups, and scale predictable growth.",
+        "tag": "p"
+    },
+    "txt-0156": {
+        "text": "Real estate",
+        "tag": "h3"
+    },
+    "txt-0157": {
+        "text": "Generate qualified leads, optimize local SEO, and dominate niche searches.",
+        "tag": "p"
+    },
+    "txt-0158": {
+        "text": "E-commerce",
+        "tag": "h3"
+    },
+    "txt-0159": {
+        "text": "Boost conversions, minimize cart abandonment, and increase average order value.",
+        "tag": "p"
+    },
+    "txt-0160": {
+        "text": "Healthcare",
+        "tag": "h3"
+    },
+    "txt-0161": {
+        "text": "Healthcare Build trust, enhance search visibility, and attract more patients.",
+        "tag": "p"
+    },
+    "txt-0162": {
+        "text": "Local business",
+        "tag": "h3"
+    },
+    "txt-0163": {
+        "text": "Local business Rank locally, earn reviews, and excel at hyperlocal marketing.",
+        "tag": "p"
+    },
+    "txt-0164": {
+        "text": "Education",
+        "tag": "h3"
+    },
+    "txt-0165": {
+        "text": "Education Increase enrollments, boost online visibility, and engage students.",
+        "tag": "p"
+    },
+    "txt-0166": {
+        "text": "Results that speak for themselves.",
+        "tag": "h2"
+    },
+    "txt-0167": {
+        "text": "A dynamic digital marketing agency trusted by clients around the globe.",
+        "tag": "p"
+    },
+    "txt-0168": {
+        "text": "Read more success stories.",
+        "tag": "span"
+    },
+    "txt-0169": {
+        "text": "Clients",
+        "tag": "p"
+    },
+    "txt-0170": {
+        "text": "4K+",
+        "tag": "h3"
+    },
+    "txt-0171": {
+        "text": "Campaigns excuted in 2025",
+        "tag": "p"
+    },
+    "txt-0172": {
+        "text": "Brand visibility",
+        "tag": "p"
+    },
+    "txt-0173": {
+        "text": "92.5%",
+        "tag": "h3"
+    },
+    "txt-0174": {
+        "text": "Platform uptime during peak campaign.",
+        "tag": "p"
+    },
+    "txt-0175": {
+        "text": "satisfied clients globally.",
+        "tag": "h5"
+    },
+    "txt-0176": {
+        "text": "500+",
+        "tag": "h3"
+    },
+    "txt-0177": {
+        "text": "happy customers globally.",
+        "tag": "p"
+    },
+    "txt-0178": {
+        "text": "Support response time.",
+        "tag": "p"
+    },
+    "txt-0179": {
+        "text": "2 minutes",
+        "tag": "h3"
+    },
+    "txt-0180": {
+        "text": "Support responds promptly",
+        "tag": "p"
+    },
+    "txt-0181": {
+        "text": "Partnerships",
+        "tag": "p"
+    },
+    "txt-0182": {
+        "text": "150+",
+        "tag": "h3"
+    },
+    "txt-0183": {
+        "text": "collaborations with institutions.",
+        "tag": "p"
+    },
+    "txt-0184": {
+        "text": "Client words",
+        "tag": "h2"
+    },
+    "txt-0185": {
+        "text": "Michael Lee",
+        "tag": "h3"
+    },
+    "txt-0186": {
+        "text": "Urban Brew",
+        "tag": "p"
+    },
+    "txt-0187": {
+        "text": "They captured every moment beautifully with creativity and professionalism. Their\n            attention to detail and seamless editing exceeded our expectations. Highly recommend!",
+        "tag": "p"
+    },
+    "txt-0188": {
+        "text": "Sarah Johnson",
+        "tag": "h3"
+    },
+    "txt-0189": {
+        "text": "TechFlow Solutions",
+        "tag": "p"
+    },
+    "txt-0190": {
+        "text": "Working with this team was a game-changer for our business. They understood our vision\n            perfectly and executed it flawlessly, exceeding our expectations in every way.",
+        "tag": "p"
+    },
+    "txt-0191": {
+        "text": "Emily Rodriguez",
+        "tag": "h3"
+    },
+    "txt-0192": {
+        "text": "Creative Studios",
+        "tag": "p"
+    },
+    "txt-0193": {
+        "text": "The level of creativity and technical expertise they brought to our project was\n            outstanding. They delivered a solution that perfectly captured our brand's essence and\n            vision.",
+        "tag": "p"
+    },
+    "txt-0194": {
+        "text": "Get a free audit with a personalized plan.",
+        "tag": "h2"
+    },
+    "txt-0195": {
+        "text": "We\u2019ll analyze your current performance and show you exactly how we\u2019d enhance it\u2014before\n            you spend a dime.",
+        "tag": "p"
+    },
+    "txt-0196": {
+        "text": "Claim my free audit",
+        "tag": "span"
+    },
+    "txt-0197": {
+        "text": "Blog",
+        "tag": "span"
+    },
+    "txt-0198": {
+        "text": "Actionable insights from real experts.",
+        "tag": "h2"
+    },
+    "txt-0199": {
+        "text": "Stay ahead of trends, updates, and growth strategies with our expert-written blog.",
+        "tag": "p"
+    },
+    "txt-0200": {
+        "text": "Digital ads",
+        "tag": "span"
+    },
+    "txt-0201": {
+        "text": "Kristin Watson",
+        "tag": "p"
+    },
+    "txt-0202": {
+        "text": "What google\u2019s march 2025 update means for your SEO.",
+        "tag": "a"
+    },
+    "txt-0203": {
+        "text": "An electronic prescription designed for a digital marketing agency.",
+        "tag": "p"
+    },
+    "txt-0204": {
+        "text": "Read more",
+        "tag": "span"
+    },
+    "txt-0205": {
+        "text": "Crypto marketing",
+        "tag": "span"
+    },
+    "txt-0206": {
+        "text": "Kristin Max",
+        "tag": "p"
+    },
+    "txt-0207": {
+        "text": "How to build links without spam or penalties.",
+        "tag": "a"
+    },
+    "txt-0208": {
+        "text": "In the world of digital marketing, innovative approaches are essential.",
+        "tag": "p"
+    },
+    "txt-0209": {
+        "text": "Read more",
+        "tag": "span"
+    },
+    "txt-0210": {
+        "text": "E-banking",
+        "tag": "span"
+    },
+    "txt-0211": {
+        "text": "Bessie Cooper",
+        "tag": "p"
+    },
+    "txt-0212": {
+        "text": "Email funnels that generate real revenue\u2014not just opens.",
+        "tag": "a"
+    },
+    "txt-0213": {
+        "text": "In the world of digital marketing, effective strategies are essential for engaging.",
+        "tag": "p"
+    },
+    "txt-0214": {
+        "text": "Read more",
+        "tag": "span"
+    },
+    "txt-0215": {
+        "text": "Explore the blog",
+        "tag": "span"
+    },
+    "txt-0216": {
+        "text": "Let\u2019s start",
+        "tag": "span"
+    },
+    "txt-0217": {
+        "text": "Ready to grow smarter?",
+        "tag": "h2"
+    },
+    "txt-0218": {
+        "text": "Let\u2019s make your marketing budget work harder\u2014not bigger. Book your strategy call today and\n        take the first step toward predictable growth.",
+        "tag": "p"
+    },
+    "txt-0219": {
+        "text": "Book your free strategy call",
+        "tag": "span"
+    },
+    "txt-0220": {
+        "text": "Turpis tortor nunc sed amet et faucibus vitae morbi congue sed id mauris.",
+        "tag": "p"
+    },
+    "txt-0221": {
+        "text": "Facebook",
+        "tag": "span"
+    },
+    "txt-0222": {
+        "text": "Instagram",
+        "tag": "span"
+    },
+    "txt-0223": {
+        "text": "Youtube",
+        "tag": "span"
+    },
+    "txt-0224": {
+        "text": "LinkedIn",
+        "tag": "span"
+    },
+    "txt-0225": {
+        "text": "Dribbble",
+        "tag": "span"
+    },
+    "txt-0226": {
+        "text": "Behance",
+        "tag": "span"
+    },
+    "txt-0227": {
+        "text": "Company",
+        "tag": "p"
+    },
+    "txt-0228": {
+        "text": "About Us",
+        "tag": "a"
+    },
+    "txt-0229": {
+        "text": "Career",
+        "tag": "a"
+    },
+    "txt-0230": {
+        "text": "Why Choose Us",
+        "tag": "a"
+    },
+    "txt-0231": {
+        "text": "Our Manifesto",
+        "tag": "a"
+    },
+    "txt-0232": {
+        "text": "Contact us",
+        "tag": "a"
+    },
+    "txt-0233": {
+        "text": "Support",
+        "tag": "p"
+    },
+    "txt-0234": {
+        "text": "FAQ",
+        "tag": "a"
+    },
+    "txt-0235": {
+        "text": "Brandkit",
+        "tag": "a"
+    },
+    "txt-0236": {
+        "text": "Documentation",
+        "tag": "a"
+    },
+    "txt-0237": {
+        "text": "Tutorial",
+        "tag": "a"
+    },
+    "txt-0238": {
+        "text": "Support",
+        "tag": "a"
+    },
+    "txt-0239": {
+        "text": "Legal Policies",
+        "tag": "p"
+    },
+    "txt-0240": {
+        "text": "Terms & Conditions",
+        "tag": "a"
+    },
+    "txt-0241": {
+        "text": "Privacy Policy",
+        "tag": "a"
+    },
+    "txt-0242": {
+        "text": "Refund Policy",
+        "tag": "a"
+    },
+    "txt-0243": {
+        "text": "GDPR Compliance",
+        "tag": "a"
+    },
+    "txt-0244": {
+        "text": "Affiliate Policy",
+        "tag": "a"
+    },
+    "txt-0245": {
+        "text": "Copyright \u00a9Nexsas \u2013 smart application for modern business",
+        "tag": "p"
+    },
+    "txt-0246": {
+        "text": "40",
+        "tag": "span"
+    },
+    "txt-0247": {
+        "text": "40",
+        "tag": "span"
+    }
+}
