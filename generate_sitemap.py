@@ -10,7 +10,7 @@ DIR_PATH = "/Users/jamelasmac/website"
 
 # Mapping human-readable page names to files
 PAGE_NAMES = {
-    "index.html": "Home Page",
+    "index.html": "Landing Page",
     "digital-marketing.html": "Digital Marketing Home",
     "digital-marketing-about.html": "About Us",
     "digital-marketing-services.html": "Our Services",
@@ -89,7 +89,7 @@ def get_section_name(element):
         if not curr or curr.name == 'body':
             break
         # Semantic tags
-        if curr.name in ['header', 'footer', 'nav']:
+        if curr.name in ['header', 'footer', 'nav', 'aside']:
             return curr.name.title()
         if curr.name == 'section':
             cls = curr.get('class', [])
@@ -170,10 +170,19 @@ def process_html_pages(pages):
                 
                 section_name = get_section_name(tag)
                 
-                if section_name not in grouped_content_map[page_title_readable]:
-                    grouped_content_map[page_title_readable][section_name] = {}
+                # If this is a global header/footer, assign it to a special "Global" pseudo-page so it doesn't clutter Landing Page
+                if section_name in ["Header", "Footer", "Nav", "Aside"]:
+                    assigned_page_block = "Global Elements (Header, Footer, Nav, Sidebar)"
+                else:
+                    assigned_page_block = page_title_readable
+                
+                if assigned_page_block not in grouped_content_map:
+                    grouped_content_map[assigned_page_block] = {}
+
+                if section_name not in grouped_content_map[assigned_page_block]:
+                    grouped_content_map[assigned_page_block][section_name] = {}
                     
-                grouped_content_map[page_title_readable][section_name][content_id] = {
+                grouped_content_map[assigned_page_block][section_name][content_id] = {
                     "text": text,
                     "tag": tag.name,
                     "file": page
