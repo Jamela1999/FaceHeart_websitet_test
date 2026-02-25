@@ -39,6 +39,30 @@ document.addEventListener("DOMContentLoaded", () => {
                     const originalOutline = previewElem.style.outline;
                     const originalOutlineOffset = previewElem.style.outlineOffset;
 
+                    // Recursively reveal hidden parents (e.g. mega menus)
+                    const hiddenParents = [];
+                    let p = previewElem.parentElement;
+                    while (p && p !== document.body && p !== document.documentElement) {
+                        const style = window.getComputedStyle(p);
+                        let needsReveal = false;
+                        if (style.opacity === '0' || style.visibility === 'hidden' || style.display === 'none') {
+                            hiddenParents.push({
+                                el: p,
+                                opacity: p.style.opacity,
+                                visibility: p.style.visibility,
+                                display: p.style.display,
+                                pointerEvents: p.style.pointerEvents,
+                                zIndex: p.style.zIndex
+                            });
+                            p.style.opacity = '1';
+                            p.style.visibility = 'visible';
+                            if (style.display === 'none') p.style.display = 'block';
+                            p.style.pointerEvents = 'auto';
+                            p.style.zIndex = '999999';
+                        }
+                        p = p.parentElement;
+                    }
+
                     previewElem.style.transition = 'background-color 0.5s ease';
                     previewElem.style.backgroundColor = '#fef08a'; // Tailwind yellow-200
                     previewElem.style.outline = '4px solid #eab308'; // Tailwind yellow-500
@@ -50,8 +74,17 @@ document.addEventListener("DOMContentLoaded", () => {
                         previewElem.style.outline = originalOutline;
                         previewElem.style.outlineOffset = originalOutlineOffset;
                         setTimeout(() => previewElem.style.transition = originalTrans, 500);
-                    }, 3000); // 3 seconds highlight
-                }, 300);
+
+                        // Restore hidden parents
+                        hiddenParents.forEach(saved => {
+                            saved.el.style.opacity = saved.opacity;
+                            saved.el.style.visibility = saved.visibility;
+                            saved.el.style.display = saved.display;
+                            saved.el.style.pointerEvents = saved.pointerEvents;
+                            saved.el.style.zIndex = saved.zIndex;
+                        });
+                    }, 4000); // 4 seconds highlight
+                }, 400);
             }
         }
     });
