@@ -85,7 +85,7 @@ def download_missing_pages():
 def get_section_name(element):
     """Attempt to find a semantic wrapper parent for grouping."""
     curr = element.parent
-    for _ in range(5): # Go up to 5 levels
+    for _ in range(20): # Go up to 20 levels to catch deep mega-menus
         if not curr or curr.name == 'body':
             break
         # Semantic tags
