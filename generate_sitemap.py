@@ -122,6 +122,10 @@ def process_html_pages(pages):
         with open(local_path, 'r', encoding='utf-8') as f:
             soup = BeautifulSoup(f.read(), 'html.parser')
             
+        # Strip ALL existing data-content-id attributes to avoid phantom collisions
+        for tag in soup.find_all(True, {'data-content-id': True}):
+            del tag['data-content-id']
+            
         page_title_readable = PAGE_NAMES.get(page, page)
         if page_title_readable not in grouped_content_map:
             grouped_content_map[page_title_readable] = {}
