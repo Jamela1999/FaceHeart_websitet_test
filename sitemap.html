@@ -154,7 +154,8 @@
             const sitemapRef = database.ref('sitemap/content');
 
             try {
-                const response = await fetch('content.json');
+                // Append timestamp to prevent browser caching of the JSON mapping
+                const response = await fetch('content.json?v=' + new Date().getTime());
                 structuredContent = await response.json();
 
                 sitemapRef.once('value', (snapshot) => {

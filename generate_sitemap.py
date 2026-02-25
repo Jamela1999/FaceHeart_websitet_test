@@ -155,9 +155,9 @@ def process_html_pages(pages):
                 if has_valid_child:
                     continue
 
-                # Deduplicate by hashing text and tag
+                # Deduplicate purely by hashing text content (ignore tag type so links and paragraphs combine)
                 norm_text = re.sub(r'\s+', ' ', text.strip())
-                unique_string = f"{tag.name}:{norm_text}"
+                unique_string = f"text:{norm_text}"
                 content_id = "txt-" + hashlib.md5(unique_string.encode('utf-8')).hexdigest()[:8]
                 tag['data-content-id'] = content_id
 
