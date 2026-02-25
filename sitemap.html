@@ -218,6 +218,11 @@
                                             &lt;${item.tag}&gt;
                                         </span>
                                         <div class="text-[11px] text-slate-400 font-mono bg-slate-100/50 px-2 py-1 rounded inline-block border border-slate-100">${id}</div>
+                                        <div class="mt-2">
+                                            <a href="${item.file}?preview=${id}" target="_blank" class="inline-flex items-center gap-1.5 px-2.5 py-1.5 bg-indigo-50 text-indigo-600 hover:bg-indigo-100 hover:text-indigo-700 rounded-md text-xs font-semibold transition-colors">
+                                                <i data-lucide="eye" class="w-3.5 h-3.5"></i> Preview
+                                            </a>
+                                        </div>
                                     </div>
                                     <div class="col-span-4 pt-1 pr-4 text-sm text-slate-600 border-r border-slate-100 leading-relaxed font-medium">
                                         ${escapeHTML(item.text)}

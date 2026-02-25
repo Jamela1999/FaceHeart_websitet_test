@@ -166,7 +166,8 @@ def process_html_pages(pages):
                     
                 grouped_content_map[page_title_readable][section_name][content_id] = {
                     "text": text,
-                    "tag": tag.name
+                    "tag": tag.name,
+                    "file": page
                 }
                 
         # Inject the sync scripts
