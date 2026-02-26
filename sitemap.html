@@ -230,23 +230,31 @@
                     const pageHeaderId = `page-header-${pIndex}`;
                     const targetPageId = `page-content-${pIndex}`;
 
+                    const isGlobal = pageName.includes('GLOBAL');
+                    const headerBg = isGlobal ? 'bg-indigo-600 hover:bg-indigo-700' : 'bg-white hover:bg-slate-50';
+                    const iconColor = isGlobal ? 'text-indigo-200' : 'text-slate-400';
+                    const badgeBg = isGlobal ? 'bg-white/20 text-white' : 'bg-blue-50 text-blue-600';
+                    const titleColor = isGlobal ? 'text-white' : 'text-slate-800';
+                    const subColor = isGlobal ? 'text-indigo-100' : 'text-slate-500';
+                    const iconName = isGlobal ? 'globe' : 'file-text';
+
                     pageBlock.innerHTML = `
-                        <button id="${pageHeaderId}" class="w-full flex items-center justify-between p-5 bg-white hover:bg-slate-50 transition-colors text-left focus:outline-none focus:bg-slate-50">
+                        <button id="${pageHeaderId}" class="w-full flex items-center justify-between p-5 ${headerBg} transition-colors text-left focus:outline-none ${isGlobal ? 'focus:bg-indigo-700' : 'focus:bg-slate-50'}">
                             <div class="flex items-center gap-3">
-                                <div class="p-2 bg-blue-50 text-blue-600 rounded-lg">
-                                    <i data-lucide="file-text" class="w-5 h-5"></i>
+                                <div class="p-2 ${badgeBg} rounded-lg">
+                                    <i data-lucide="${iconName}" class="w-5 h-5"></i>
                                 </div>
                                 <div>
-                                    <h2 class="text-lg font-bold text-slate-800">${pageName}</h2>
-                                    <p class="text-xs text-slate-500">${Object.keys(pageSections).length} sections, ${pageTotalItems} text elements</p>
+                                    <h2 class="text-lg font-bold ${titleColor}">${pageName}</h2>
+                                    <p class="text-xs ${subColor}">${Object.keys(pageSections).length} sections, ${pageTotalItems} text elements</p>
                                 </div>
                             </div>
                             <div class="flex items-center gap-3">
-                                <span class="text-xs text-slate-400 font-mono">${targetFileName}</span>
-                                <i data-lucide="chevron-down" class="w-5 h-5 text-slate-400 accordion-icon"></i>
+                                <span class="text-xs ${isGlobal ? 'text-indigo-200' : 'text-slate-400'} font-mono">${isGlobal ? 'Applies across site' : targetFileName}</span>
+                                <i data-lucide="chevron-down" class="w-5 h-5 ${iconColor} accordion-icon"></i>
                             </div>
                         </button>
-                        <div id="${targetPageId}" class="accordion-content bg-slate-50 border-t border-slate-100">
+                        <div id="${targetPageId}" class="accordion-content bg-slate-50 border-t ${isGlobal ? 'border-indigo-700' : 'border-slate-100'}">
                             <div class="p-4 space-y-4" id="sections-${pIndex}"></div>
                         </div>
                     `;

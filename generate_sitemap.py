@@ -172,7 +172,7 @@ def process_html_pages(pages):
                 
                 # If this is a global header/footer, assign it to a special "Global" pseudo-page so it doesn't clutter Landing Page
                 if section_name in ["Header", "Footer", "Nav", "Aside"]:
-                    assigned_page_block = "Global Elements (Header, Footer, Nav, Sidebar)"
+                    assigned_page_block = "⭐ GLOBAL SHARED TEXT (Navigation Tabs & Footers)"
                 else:
                     assigned_page_block = page_title_readable
                 
